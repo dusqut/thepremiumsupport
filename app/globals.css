@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Default light mode colors */
+:root {
+  --background: #ffffff; /* Light background */
+  --foreground: #1a202c; /* Light text */
+}
+
+/* Dark mode colors */
+.dark {
+  --background: #1a202c; /* Dark background */
+  --foreground: #f8f9fc; /* Dark text */
+}
+
+/* Apply the colors globally */
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+header {
+  margin-bottom: 0; /* Reduced space */
+}
+
+main {
+  margin-top: 0; /* Reduced space */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+

@@ -4,7 +4,7 @@ import ProductCard from "./ProductCard";
 export default function ProductList() {
   const products = [
     {
-      image: "/Img/Linkedin.png", 
+      image: "/Img/linkedin.png", 
       title: "LinkedIn Premium",
       rating: 5,
       description: "On Your Account",
@@ -46,7 +46,7 @@ export default function ProductList() {
       price: "1 year | $35",
     },
     {
-      image: "/Img/Azure.png", 
+      image: "/Img/azure.png", 
       title: "Azure Credits",
       rating: 5,
       description: "On a Private Account from 100$",

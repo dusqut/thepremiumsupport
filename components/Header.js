@@ -13,7 +13,7 @@ export default function Header() {
       <div className="text-xl font-bold ml-4">
         <Link href="/" legacyBehavior>
           <a className="flex items-center">
-            <img src="/img/logo.png" alt="Logo" className="w-6 h-6 mr-2" />
+            <img src="/Img/logo.png" alt="Logo" className="w-6 h-6 mr-2" />
             <span>The Premium Support</span>
           </a>
         </Link>

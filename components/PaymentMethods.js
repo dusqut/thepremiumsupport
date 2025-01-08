@@ -7,7 +7,7 @@ function PaymentMethods() {
   {/* Left: Single Circular Image */}
   <div className="md:w-1/2 flex justify-center items-center">
     <img
-      src="/img/paymentMethods.png"
+      src="/Img/paymentMethods.png"
       alt="Payment Methods Icons"
       className="w-[80%] max-w-lg"
     />

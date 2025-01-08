@@ -7,7 +7,7 @@ const Footer = () => {
         {/* Logo and Description */}
         <div>
           <div className="flex items-center mb-4">
-            <img src="/img/logo.png" alt="Premium Support Logo" className="w-8 h-8 mr-2" />
+            <img src="/Img/logo.png" alt="Premium Support Logo" className="w-8 h-8 mr-2" />
             <h3 className="text-lg font-bold">The Premium Support</h3>
           </div>
           <p className="text-sm">

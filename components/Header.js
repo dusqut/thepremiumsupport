@@ -28,7 +28,7 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center py-4">
         {/* Logo and Title */}
         <div className="flex items-center">
-          <img src="/img/logo.png" alt="Logo" className="w-8 h-8 mr-2" />
+          <img src="/Img/logo.png" alt="Logo" className="w-8 h-8 mr-2" />
           <Link href="/" className="text-xl font-bold dark:text-white">
             The Premium Support
           </Link>

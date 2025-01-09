@@ -40,7 +40,7 @@ const Faq = () => {
   };
 
   return (
-    <div className="bg-900 py-12 px-8" id="faq">
+    <div className="bg-900 py-12 px-6" id="faq">
       <h2 className="text-4xl font-bold mb-4">
         Frequently Asked <span className="text-purple-500">Questions</span>
       </h2>

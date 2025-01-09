@@ -10,7 +10,7 @@ function Contact() {
             You can contact us from any of the following channels and the offer will be delivered privately once paid.<br/> 
             <span className="text-red-500 font-bold"> Select One and Click on it.</span>
         </p>
-        <div className="flex justify-center space-x-14 mt-8">
+        <div className="flex justify-center space-x-8 mt-8">
             {/* WhatsApp */}
             <div className="flex flex-col items-center bg-100 p-6 rounded-lg shadow-md cursor-pointer hover:shadow-lg transition">
             <a href="https://wa.me/94713675980" target="_blank">

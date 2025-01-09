@@ -42,7 +42,7 @@ export default function Home() {
             </button>
           </Link>
           
-          <Link href="/AllProducts">
+          <Link href="#AllProducts">
             <button className="text-indigo-400 hover:text-yellow-500 font-medium py-3 px-6 flex items-center space-x-2">
               <span>Explore All Products</span>
               <span className="text-lg">→</span>
@@ -84,7 +84,7 @@ export default function Home() {
       <div className="flex justify-center mt-6">
         <Link href="https://wa.me/94713675980">
           <button className="px-6 py-3 bg-gradient-to-r from-blue-600 to-blue-400 text-white text-lg font-semibold rounded-full shadow-lg flex items-center hover:from-green-600 hover:to-green-400 transition duration-300">
-            Confirm Availability via WhatsApp
+            Confirm Your Order via WhatsApp
             <span className="ml-2">→</span>
           </button>
         </Link>

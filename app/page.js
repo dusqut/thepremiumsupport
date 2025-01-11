@@ -10,7 +10,7 @@ import Contact from "@/components/Contact";
 import Faq from "@/components/Faq";
 import About from "@/components/About";
 import Footer from "@/components/Footer";
-
+import ScrollToTopButton from "@/components/ScrollToTopButton";
 
 
 export default function Home() {
@@ -94,7 +94,7 @@ export default function Home() {
       <Faq/>
       <About/>
       <Footer/>
-        
+      <ScrollToTopButton />        
     </main>
   );
 }

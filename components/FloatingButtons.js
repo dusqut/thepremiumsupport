@@ -2,7 +2,7 @@ import React from "react";
 
 const FloatingButtons = () => {
   return (
-    <div className="fixed bottom-6 right-6 flex flex-col space-y-4 z-50">
+    <div className="fixed bottom-20 right-6 flex flex-col space-y-4 z-50">
     
       {/* WhatsApp Button */}
       <a

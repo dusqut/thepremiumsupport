@@ -122,11 +122,25 @@ export default function ProductList() {
       description: "On Your Web Account",
       price: "2 Years | $18",
     },
+    {
+      image: "/Img/notion.png",
+      title: "Notion Pro",
+      rating: 5,
+      description: "Get a Private Account",
+      price: "1 Year | $18",
+    },
+    {
+      image: "/Img/JetBrains.png",
+      title: "JetBrains Pro",
+      rating: 5,
+      description: "On Your Account",
+      price: "1 Year | $45",
+    },
 
   ];
 
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 p-8 lg:p-24">
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 p-8 lg:p-32">
       {products.map((product, index) => (
         <ProductCard
           key={index}

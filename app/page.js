@@ -24,10 +24,10 @@ export default function Home() {
       <section className="flex flex-col md:flex-row justify-between items-center px-8 py-16">
 
       <div className="w-full lg:w-1/2">
-        <h1 className="text-6xl font-extrabold leading-tight">
+        <h1 className="text-7xl font-extrabold leading-tight">
           Premium <br />
           <span className="text-indigo-400">Support</span> <br />
-          Subscriptions <br />
+          Subscription <br />
           <span className="text-indigo-600">Offers</span>
         </h1>
         <p className="text-lg mt-6">
@@ -37,7 +37,7 @@ export default function Home() {
         </p>
         <div className="mt-8 flex space-x-4">
           <Link href="https://wa.me/94713675980">
-            <button className="bg-indigo-600 hover:bg-yellow-500 text-white font-medium py-3 px-6 rounded-lg">
+            <button className="bg-indigo-600 hover:bg-green-500 text-white font-medium py-3 px-6 rounded-lg">
               Contact Us
             </button>
           </Link>

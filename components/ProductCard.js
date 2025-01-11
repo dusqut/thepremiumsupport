@@ -11,7 +11,7 @@ export default function ProductCard({ image, title, rating, description, price }
       <div className="flex justify-between items-center mt-2">
         <span className="text-indigo-500 font-medium">{price}</span>
         <Link href="https://wa.me/94713675980">
-          <button className="bg-indigo-600 text-white px-6 py-3 rounded-lg hover:bg-green-800">+</button>
+          <button className="bg-indigo-600 text-white px-6 py-3 rounded-lg">+</button>
         </Link>
       </div>
     </div>

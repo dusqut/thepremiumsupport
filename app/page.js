@@ -61,11 +61,11 @@ export default function Home() {
       </section>
       
       {/* Divider */}
-      <div className="h-8 bg-transparent"></div>
+      <div className="h-0.5 bg-transparent"></div>
       
       {/* New Section: Best Selling Offers */}
       <section>
-        <div className="text-center mb-8">
+        <div className="text-center mb-2">
           <h2 className="text-3xl font-bold">
             Best Selling <span className="text-purple-500">Offers</span>
           </h2>

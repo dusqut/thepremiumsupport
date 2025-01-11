@@ -13,7 +13,7 @@ function Contact() {
             href="https://wa.me/94713675980?text=Hello"
             target="_blank"
             rel="noopener noreferrer"
-            className="shadow-md p-4 rounded-lg flex items-center justify-center w-full md:w-1/3 hover:shadow-lg transition-shadow"
+            className="shadow-md p-6 rounded-lg flex items-center justify-center w-full md:w-1/3 hover:shadow-lg transition-shadow"
             >
             <img src="/Img/WhatsApp.png" alt="WhatsApp" className="w-8 h-8 mr-2" />
             <p className="text-lg font-medium">WhatsApp</p>
@@ -39,6 +39,17 @@ function Contact() {
             >
             <img src="/Img/msg.png" alt="Messenger" className="w-8 h-8 mr-2" />
             <p className="text-lg font-medium">Messenger</p>
+            </a>
+
+            {/* Instagram Button */}
+            <a
+            href="https://www.instagram.com/ThePremiumSupport/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="shadow-md p-4 rounded-lg flex items-center justify-center w-full md:w-1/3 hover:shadow-lg transition-shadow"
+            >
+            <img src="/Img/Instagram.png" alt="Messenger" className="w-8 h-8 mr-2" />
+            <p className="text-lg font-medium">Instagram</p>
             </a>
 
             {/* Telegram Button */}

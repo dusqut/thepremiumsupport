@@ -77,7 +77,7 @@ export default function ProductList() {
       image: "/Img/idm.png",
       title: "Internet Download Manager",
       rating: 5,
-      description: "On Your Account",
+      description: "On Your Device",
       price: "Lifetime | $20",
     },
     {
@@ -101,6 +101,28 @@ export default function ProductList() {
       description: "On Your Account",
       price: "Lifetime | $8",
     },
+    {
+      image: "/Img/envato.png",
+      title: "Envato Elements",
+      rating: 5,
+      description: "On Your Account",
+      price: "1 Year | $67",
+    },
+    {
+      image: "/Img/Voicemotion.png",
+      title: "Voicemotion Pro",
+      rating: 5,
+      description: "On Your Account",
+      price: "Lifetime | $16",
+    },
+    {
+      image: "/Img/loom.svg",
+      title: "Loom Pro",
+      rating: 5,
+      description: "On Your Web Account",
+      price: "2 Years | $18",
+    },
+
   ];
 
   return (

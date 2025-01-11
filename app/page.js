@@ -36,7 +36,7 @@ export default function Home() {
           invitation offers.
         </p>
         <div className="mt-8 flex space-x-4">
-          <Link href="https://wa.me/94713675980">
+          <Link href="/#contact">
             <button className="bg-indigo-600 hover:bg-green-500 text-white font-medium py-3 px-6 rounded-lg">
               Contact Us
             </button>

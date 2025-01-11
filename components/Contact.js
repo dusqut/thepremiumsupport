@@ -13,12 +13,12 @@ const Contact = () => {
     <div className="contact-section">
       <h2 className="text-center text-2xl font-bold mb-6">Contact Us on Any Media</h2>
       <div className="flex flex-col items-center space-y-4">
-        <div className="grid grid-cols-2 gap-4">
+        <div className="grid grid-cols-2 gap-4 ">
 
           {/* WhatsApp Button */}
           <button
             onClick={() => window.open("https://wa.me/94713675980", "_blank")}
-            className="flex items-center px-4 py-2 rounded-lg bg-green-500 text-white shadow-md hover:bg-green-600"
+            className="flex items-center px-4 py-4 rounded-lg shadow-md bg-blue-500 bg-opacity-30 hover:bg-green-400"
           >
             <img
                 src="/Img/WhatsApp.png"
@@ -31,7 +31,7 @@ const Contact = () => {
           {/* Email Button */}
           <button
             onClick={() => (window.location.href = "mailto:premiumsuppores@outlook.com")}
-            className="flex items-center px-4 py-2 rounded-lg bg-blue-500 text-white shadow-md hover:bg-blue-600"
+            className="flex items-center px-4 py-4 rounded-lg shadow-md bg-blue-500 bg-opacity-30 hover:bg-blue-300"
           >
             <img
                 src="/Img/email.png"
@@ -44,7 +44,7 @@ const Contact = () => {
           {/* Messenger Button */}
           <button
             onClick={() => (window.location.href = "https://m.me/ThePremiumSupport")}
-            className="flex items-center px-4 py-2 rounded-lg bg-blue-500 text-white shadow-md hover:bg-blue-600"
+            className="flex items-center px-4 py-4 rounded-lg shadow-md bg-blue-500 bg-opacity-30 hover:bg-indigo-300"
           >
             <img
                 src="/Img/msg.png"
@@ -57,7 +57,7 @@ const Contact = () => {
           {/* Instagram Button */}
           <button
             onClick={() => (window.location.href = "https://www.instagram.com/ThePremiumSupport/")}
-            className="flex items-center px-4 py-2 rounded-lg bg-blue-500 text-white shadow-md hover:bg-blue-600"
+            className="flex items-center px-4 py-4 rounded-lg shadow-md bg-blue-500 bg-opacity-30 hover:bg-orange-300"
           >
             <img
                 src="/Img/Instagram.png"
@@ -70,7 +70,7 @@ const Contact = () => {
           {/* Telegram Button */}
           <button
             onClick={() => (window.location.href = "https://t.me/dePremiumSupport")}
-            className="flex items-center px-4 py-2 rounded-lg bg-blue-500 text-white shadow-md hover:bg-blue-600"
+            className="flex items-center px-4 py-4 rounded-lg shadow-md bg-blue-500 bg-opacity-30 hover:bg-blue-300"
           >
             <img
                 src="/Img/telegram.png"
@@ -83,7 +83,7 @@ const Contact = () => {
           {/* WeChat Button */}
           <button
             onClick={handleWeChatClick}
-            className="flex items-center px-4 py-2 rounded-lg bg-teal-500 text-white shadow-md hover:bg-teal-600"
+            className="flex items-center px-4 py-4 rounded-lg shadow-md bg-blue-500 bg-opacity-30 hover:bg-green-300"
           >
             <img
                 src="/Img/wechat.png"

@@ -19,7 +19,7 @@ export default function Home() {
 
   return (
    
-    <main className="min-h-screen bg-custom-gradient text-foreground  items-center px-12 mt-0">
+    <main className="min-h-screen bg-custom-gradient text-foreground  items-center px-12 mt-4">
       {/* Hero Section */}
       <section className="flex flex-col md:flex-row justify-between items-center px-8 py-16">
 

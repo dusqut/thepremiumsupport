@@ -37,7 +37,7 @@ function page() {
         <p className="text-lg mt-6">
           If you have any questions about our privacy practices, please{" "}
           <a
-            href="/contact"
+            href="/#contact"
             className="text-blue-500 underline hover:text-blue-700"
           >
             contact us

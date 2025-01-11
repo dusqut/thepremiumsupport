@@ -1,73 +1,113 @@
-import React from 'react'
+"use client";
 
-function Contact() {
+import React, { useState } from "react";
+
+const Contact = () => {
+  const [showWeChat, setShowWeChat] = useState(false);
+
+  const handleWeChatClick = () => {
+    setShowWeChat((prev) => !prev);
+  };
+
   return (
-    <div className="container mx-auto py-8" id="contact">
-        <h2 className="text-center text-xl font-bold mb-4">Contact Us for Offer Delivery</h2>
-        <p className="text-center mb-6">
-            You can contact us from any of the following channels, and the offer will be delivered privately once paid.
-        </p>
-        <div className="flex flex-col md:flex-row justify-center gap-4">
-            {/* WhatsApp Button */}
-            <a
-            href="https://wa.me/94713675980?text=Hello"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="shadow-md p-6 rounded-lg flex items-center justify-center w-full md:w-1/3 hover:shadow-lg transition-shadow"
-            >
-            <img src="/Img/WhatsApp.png" alt="WhatsApp" className="w-8 h-8 mr-2" />
-            <p className="text-lg font-medium">WhatsApp</p>
-            </a>
+    <div className="contact-section">
+      <h2 className="text-center text-2xl font-bold mb-6">Contact Us on Any Media</h2>
+      <div className="flex flex-col items-center space-y-4">
+        <div className="grid grid-cols-2 gap-4">
 
-            {/* Email Button */}
-            <a
-            href="mailto:premiumsuppores@outlook.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="shadow-md p-4 rounded-lg flex items-center justify-center w-full md:w-1/3 hover:shadow-lg transition-shadow"
-            >
-            <img src="/Img/email.png" alt="Email" className="w-8 h-8 mr-2" />
-            <p className="text-lg font-medium">E-Mail</p>
-            </a>
+          {/* WhatsApp Button */}
+          <button
+            onClick={() => window.open("https://wa.me/94713675980", "_blank")}
+            className="flex items-center px-4 py-2 rounded-lg bg-green-500 text-white shadow-md hover:bg-green-600"
+          >
+            <img
+                src="/Img/WhatsApp.png"
+                alt="WhatsApp icon"
+                className="w-12 h-12 mx-auto"
+              />
+            WhatsApp
+          </button>
 
-            {/* Messenger Button */}
-            <a
-            href="https://m.me/ThePremiumSupport"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="shadow-md p-4 rounded-lg flex items-center justify-center w-full md:w-1/3 hover:shadow-lg transition-shadow"
-            >
-            <img src="/Img/msg.png" alt="Messenger" className="w-8 h-8 mr-2" />
-            <p className="text-lg font-medium">Messenger</p>
-            </a>
+          {/* Email Button */}
+          <button
+            onClick={() => (window.location.href = "mailto:premiumsuppores@outlook.com")}
+            className="flex items-center px-4 py-2 rounded-lg bg-blue-500 text-white shadow-md hover:bg-blue-600"
+          >
+            <img
+                src="/Img/email.png"
+                alt="email icon"
+                className="w-12 h-12 mx-auto"
+              />
+            Email
+          </button>
 
-            {/* Instagram Button */}
-            <a
-            href="https://www.instagram.com/ThePremiumSupport/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="shadow-md p-4 rounded-lg flex items-center justify-center w-full md:w-1/3 hover:shadow-lg transition-shadow"
-            >
-            <img src="/Img/Instagram.png" alt="Messenger" className="w-8 h-8 mr-2" />
-            <p className="text-lg font-medium">Instagram</p>
-            </a>
+          {/* Messenger Button */}
+          <button
+            onClick={() => (window.location.href = "https://m.me/ThePremiumSupport")}
+            className="flex items-center px-4 py-2 rounded-lg bg-blue-500 text-white shadow-md hover:bg-blue-600"
+          >
+            <img
+                src="/Img/msg.png"
+                alt="Messenger icon"
+                className="w-12 h-12 mx-auto"
+              />
+            Messenger
+          </button>
 
-            {/* Telegram Button */}
-            <a
-            href="https://t.me/dePremiumSupport"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="shadow-md p-4 rounded-lg flex items-center justify-center w-full md:w-1/3 hover:shadow-lg transition-shadow"
-            >
-            <img src="/Img/telegram.png" alt="Messenger" className="w-8 h-8 mr-2" />
-            <p className="text-lg font-medium">Telegram</p>
-            </a>
+          {/* Instagram Button */}
+          <button
+            onClick={() => (window.location.href = "https://www.instagram.com/ThePremiumSupport/")}
+            className="flex items-center px-4 py-2 rounded-lg bg-blue-500 text-white shadow-md hover:bg-blue-600"
+          >
+            <img
+                src="/Img/Instagram.png"
+                alt="Instagram icon"
+                className="w-12 h-12 mx-auto"
+              />
+            Instagram
+          </button>
+
+          {/* Telegram Button */}
+          <button
+            onClick={() => (window.location.href = "https://t.me/dePremiumSupport")}
+            className="flex items-center px-4 py-2 rounded-lg bg-blue-500 text-white shadow-md hover:bg-blue-600"
+          >
+            <img
+                src="/Img/telegram.png"
+                alt="telegram icon"
+                className="w-12 h-12 mx-auto"
+              />
+              Telegram
+          </button>
+
+          {/* WeChat Button */}
+          <button
+            onClick={handleWeChatClick}
+            className="flex items-center px-4 py-2 rounded-lg bg-teal-500 text-white shadow-md hover:bg-teal-600"
+          >
+            <img
+                src="/Img/wechat.png"
+                alt="wechat icon"
+                className="w-12 h-12 mx-auto"
+              />
+            WeChat
+          </button>
+
+          {/* WeChat QR Code or ID Display */}
+          {showWeChat && (
+            <div className="mt-4 p-4 border rounded-lg bg-white shadow-lg text-center">
+              <img
+                src="/Img/wechatQR.jpg"
+                alt="WeChat QR Code"
+                className="w-32 h-32 mx-auto"
+              />
+              <p className="mt-4 text-sm text-gray-600">ID: wxid_m01wclyb2e6222</p>
+            </div>
+          )}
         </div>
-        </div>
+      </div>
+    </div>
+  );
+};
 
-
-
-  )
-}
-
-export default Contact
+export default Contact;

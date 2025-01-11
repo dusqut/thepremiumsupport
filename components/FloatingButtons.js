@@ -1,5 +1,6 @@
 import React from "react";
 
+
 const FloatingButtons = () => {
   return (
     <div className="fixed bottom-20 right-6 flex flex-col space-y-4 z-50">
@@ -21,7 +22,7 @@ const FloatingButtons = () => {
 
       {/* Telegram Button */}
       <a
-        href="https://t.me/premisupport"
+        href="https://t.me/dePremiumSupport"
         target="_blank"
         rel="noopener noreferrer"
         className="p-3 bg-blue-500 text-white rounded-full shadow-lg hover:bg-blue-600 transition"

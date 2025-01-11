@@ -51,7 +51,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="flex-1 flex justify-end">
+      <div className="flex-1 flex justify-end hidden lg:block lg:w-1/2">
         <img
           src="/Img/girl.png"
           alt="Girl"

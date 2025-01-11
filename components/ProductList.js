@@ -66,6 +66,41 @@ export default function ProductList() {
       description: "On Your Account",
       price: "1 Year | $75",
     },
+    {
+      image: "/Img/DataCamp.png",
+      title: "DataCamp",
+      rating: 5,
+      description: "On Your Account",
+      price: "1 Year | $32",
+    },
+    {
+      image: "/Img/idm.png",
+      title: "Internet Download Manager",
+      rating: 5,
+      description: "On Your Account",
+      price: "Lifetime | $20",
+    },
+    {
+      image: "/Img/gpt.webp",
+      title: "Chat GPT 4",
+      rating: 5,
+      description: "Providing Credentials",
+      price: "3 months | $20",
+    },
+    {
+      image: "/Img/office.png",
+      title: "Ms Office",
+      rating: 5,
+      description: "On Your Account",
+      price: "Lifetime | $8",
+    },
+    {
+      image: "/Img/windows.webp",
+      title: "Windows 11/10 Pro",
+      rating: 5,
+      description: "On Your Account",
+      price: "Lifetime | $8",
+    },
   ];
 
   return (

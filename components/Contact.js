@@ -2,7 +2,7 @@ import React from 'react'
 
 function Contact() {
   return (
-    <div className="container mx-auto py-8">
+    <div className="container mx-auto py-8" id="contact">
         <h2 className="text-center text-xl font-bold mb-4">Contact Us for Offer Delivery</h2>
         <p className="text-center mb-6">
             You can contact us from any of the following channels, and the offer will be delivered privately once paid.

@@ -24,7 +24,7 @@ export default function Home() {
       <section className="flex flex-col md:flex-row justify-between items-center px-8 py-16">
 
       <div className="w-full lg:w-1/2">
-        <h1 className="text-7xl font-extrabold leading-tight">
+        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold leading-tight">
           Premium <br />
           <span className="text-indigo-400">Support</span> <br />
           Subscription <br />

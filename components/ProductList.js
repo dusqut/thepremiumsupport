@@ -136,6 +136,20 @@ export default function ProductList() {
       description: "On Your Account",
       price: "1 Year | $45",
     },
+    {
+      image: "/Img/invideo.png",
+      title: "Invideo Studio",
+      rating: 5,
+      description: "On Your Fresh Email",
+      price: "1 Year | $25",
+    },
+    {
+      image: "/Img/turnitin.webp",
+      title: "Turnitin Pro",
+      rating: 5,
+      description: "On Your Account | Student",
+      price: "1 Year | $25",
+    },
 
   ];
 

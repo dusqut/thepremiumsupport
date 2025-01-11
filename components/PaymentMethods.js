@@ -28,10 +28,7 @@ function PaymentMethods() {
         <span className="w-4 h-4 bg-blue-500 inline-block rounded-full mr-2"></span>
         Online Bank transfers
       </li>
-      <li className="mb-2 flex items-center">
-        <span className="w-4 h-4 bg-blue-500 inline-block rounded-full mr-2"></span>
-        Card Payments
-      </li>
+      
       <li className="mb-2 flex items-center">
         <span className="w-4 h-4 bg-blue-500 inline-block rounded-full mr-2"></span>
         UPI

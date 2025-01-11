@@ -3,6 +3,7 @@ import "./globals.css";
 import { ThemeProvider } from '../context/ThemeContext';
 import Header from "../components/Header";
 import Link from "next/link";
+import FloatingButtons from "@/components/FloatingButtons";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -30,6 +31,7 @@ export default function RootLayout({ children }) {
             <div className="wrapper">
               {children}
             </div>
+            <FloatingButtons />
         </ThemeProvider>
       </body>
     </html>

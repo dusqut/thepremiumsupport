@@ -10,7 +10,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="contact-section">
+    <div className="contact-section" id="contact">
       <h2 className="text-center text-2xl font-bold mb-6">Contact Us on Any Media</h2>
       <div className="flex flex-col items-center space-y-4">
         <div className="grid grid-cols-2 gap-4 ">

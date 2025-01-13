@@ -4,6 +4,7 @@ import Link from "next/link";
 
 const PaymentMethods = () => {
   const [showCryptoWallet, setShowCryptoWallet] = useState(false);
+  const [showQR, setShowQR] = useState(false);
 
   const handleCopy = () => {
     navigator.clipboard.writeText("0xA245683C7A75a398Ef2e41c630807F9ada78c6cF");
@@ -38,10 +39,27 @@ const PaymentMethods = () => {
             Online Bank transfers
           </li>
           
-          <li className="mb-2 flex items-center">
-            <span className="w-4 h-4 bg-blue-500 inline-block rounded-full mr-2"></span>
-            UPI
-          </li>
+          <button
+          onClick={() => setShowQR(!showQR)}
+          className="w-half bg-yellow-500 bg-opacity-30 hover:bg-yellow-500 font-semibold py-2 px-4 rounded-lg shadow-lg transition-all"
+        >
+          UPI (India) / China UnionPay 
+        </button>
+        {showQR && (
+          <div className="mt-4 bg-white p-2 rounded-lg shadow-lg text-gray-900">
+            <p className="font-semibold">
+              Scan for Pay
+            </p>
+            <img
+              src="/Img/qr.jpg"
+              alt="QR COde"
+              className="w-32 h-32 mx-auto"
+            />
+          </div>
+
+        )}
+
+          
           <li className="mb-2 flex items-center">
             <span className="w-4 h-4 bg-blue-500 inline-block rounded-full mr-2"></span>
             Wise
@@ -78,6 +96,7 @@ const PaymentMethods = () => {
               Copy Wallet Address
             </button>
           </div>
+
         )}
 
         

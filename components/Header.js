@@ -28,18 +28,7 @@ export default function Header() {
     <header className="fixed top-0 left-0 w-full z-50 bg-white dark:bg-gray-900 shadow-md">
         
         <Head>
-        {/* Google Analytics Code */}
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-CYCGHCYPNM"></script>
-                <script
-                    dangerouslySetInnerHTML={{
-                        __html: `
-                            window.dataLayer = window.dataLayer || [];
-                            function gtag(){dataLayer.push(arguments);}
-                            gtag('js', new Date());
-                            gtag('config', 'G-CYCGHCYPNM');
-                        `,
-                    }}
-                />
+
           
         {/* Meta Pixel Code */}
         <script

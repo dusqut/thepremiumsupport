@@ -4,6 +4,8 @@ import { ThemeProvider } from '../context/ThemeContext';
 import Header from "../components/Header";
 import Link from "next/link";
 import FloatingButtons from "@/components/FloatingButtons";
+import Head from "next/head";
+import Script from "next/script";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -17,7 +19,7 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   title: "Premium Support",
-  description: "Most Reliable Digital Service Provider",
+  deScription: "Most Reliable Digital Service Provider",
 };
 
 export default function RootLayout({ children }) {
@@ -28,6 +30,17 @@ export default function RootLayout({ children }) {
       >
         <ThemeProvider>
           <Header />
+          <Head>
+            <Script async src="https://www.googletagmanager.com/gtag/js?id=G-CYCGHCYPNM"></Script>
+            <Script id="google-analytics">
+              {
+                 `window.dataLayer = window.dataLayer || [];
+                  function gtag(){dataLayer.push(arguments);}
+                  gtag('js', new Date());  
+                  gtag('config', 'G-CYCGHCYPNM');`
+              }
+            </Script>
+          </Head>
             <div className="wrapper">
               {children}
             </div>

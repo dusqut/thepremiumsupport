@@ -16,12 +16,12 @@ const Faq = () => {
     {
       question: "How can I get in touch?",
       answer:
-        "You can ask to join our Telegram group that notifies instant updates. You can follow our official Facebook page, Instagram page, and website.",
+        "You can ask to join our Telegram / WhatsApp group that notifies instant updates. You can follow our official Facebook page, Instagram page, and website.",
     },
     {
-      question: "Do you have any discounts?",
+      question: "How can I buy your services?",
       answer:
-        "Yes, discounted prices are mentioned below for each product. Please note that prices change from time to time.",
+        "Please contact us first and we will request your information like email address to provide the service.",
     },
     {
       question: "What guarantee do I have?",
@@ -31,7 +31,7 @@ const Faq = () => {
     {
       question: "Can I pay in installments?",
       answer:
-        "No. But we can provide installments for some platforms like ChatGPT 4, Netflix, etc.",
+        "No. But very few plans we can offer",
     },
   ];
 

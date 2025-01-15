@@ -28,6 +28,19 @@ export default function Header() {
     <header className="fixed top-0 left-0 w-full z-50 bg-white dark:bg-gray-900 shadow-md">
         
         <Head>
+        {/* Google Analytics Code */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-CYCGHCYPNM"></script>
+                <script
+                    dangerouslySetInnerHTML={{
+                        __html: `
+                            window.dataLayer = window.dataLayer || [];
+                            function gtag(){dataLayer.push(arguments);}
+                            gtag('js', new Date());
+                            gtag('config', 'G-CYCGHCYPNM');
+                        `,
+                    }}
+                />
+          
         {/* Meta Pixel Code */}
         <script
           dangerouslySetInnerHTML={{
@@ -51,7 +64,7 @@ export default function Header() {
             height="1"
             width="1"
             style={{ display: "none" }}
-            src="https://www.facebook.com/tr?id=YOUR_PIXEL_ID&ev=PageView&noscript=1"
+            src="https://www.facebook.com/tr?id=1791479201615748&ev=PageView&noscript=1"
           />
         </noscript>
       </Head>

@@ -25,22 +25,22 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <Script async src="https://www.googletagmanager.com/gtag/js?id=G-CYCGHCYPNM"></Script>
+        <Script id="google-analytics">
+          {
+            `window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());  
+              gtag('config', 'G-CYCGHCYPNM');`
+          }
+        </Script>
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <ThemeProvider>
           <Header />
-          <Head>
-            <Script async src="https://www.googletagmanager.com/gtag/js?id=G-CYCGHCYPNM"></Script>
-            <Script id="google-analytics">
-              {
-                 `window.dataLayer = window.dataLayer || [];
-                  function gtag(){dataLayer.push(arguments);}
-                  gtag('js', new Date());  
-                  gtag('config', 'G-CYCGHCYPNM');`
-              }
-            </Script>
-          </Head>
             <div className="wrapper">
               {children}
             </div>

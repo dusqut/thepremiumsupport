@@ -8,15 +8,15 @@ const Faq = () => {
   const faqs = [
     {
       question: "How can I see feedback from your previous customers?",
-      answer:
-        "You click Here to see reviews on our Facebook page.",
+      textBefore: "You click ",
       linkText: "Here",
       linkUrl: "https://www.facebook.com/ThePremiumSupport/",
+      textAfter: " to see reviews on our Facebook page.",
     },
     {
       question: "How can I get in touch?",
       answer:
-        "You can ask to join our Telegram / WhatsApp group that notifies instant updates. You can follow our official Facebook page, Instagram page, and website.",
+        "You can ask to join our Telegram or WhatsApp group that notifies instant updates. You can follow our official Facebook page, Instagram page, and website.",
     },
     {
       question: "How can I buy your services?",
@@ -30,8 +30,7 @@ const Faq = () => {
     },
     {
       question: "Can I pay in installments?",
-      answer:
-        "No. But very few plans we can offer",
+      answer: "No. But very few plans we can offer",
     },
   ];
 
@@ -40,12 +39,13 @@ const Faq = () => {
   };
 
   return (
-    <div className="bg-900 py-12 px-6" id="faq">
+    <div className="py-12 px-6" id="faq">
       <h2 className="text-4xl font-bold mb-4">
         Frequently Asked <span className="text-purple-500">Questions</span>
       </h2>
-      <p className="text-400 mb-8">
-        We know you have some questions in mind, we have tried to list the most important ones.
+      <p className="text-gray-400 mb-8">
+        We know you have some questions in mind, we have tried to list the most
+        important ones.
       </p>
 
       <div className="space-y-4">
@@ -63,9 +63,9 @@ const Faq = () => {
             </div>
             {openIndex === index && (
               <div className="mt-4 text-gray-800">
-                {faq.answer.includes("Here") ? (
+                {faq.linkUrl ? (
                   <span>
-                    {faq.answer.split("Here")[0]}
+                    {faq.textBefore}
                     <a
                       href={faq.linkUrl}
                       target="_blank"
@@ -74,7 +74,7 @@ const Faq = () => {
                     >
                       {faq.linkText}
                     </a>
-                    {faq.answer.split("Here")[1]}
+                    {faq.textAfter}
                   </span>
                 ) : (
                   faq.answer

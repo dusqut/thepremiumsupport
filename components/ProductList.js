@@ -150,6 +150,13 @@ export default function ProductList() {
       description: "On Your Account | Student",
       price: "1 Year | $25",
     },
+    {
+      image: "/Img/google-one.png",
+      title: "Google One",
+      rating: 5,
+      description: "On Your Account | Student",
+      price: "1 Year | 100GB to 2TB from $12",
+    },
 
   ];
 

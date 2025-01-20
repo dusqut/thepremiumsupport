@@ -15,7 +15,7 @@ export default function ProductList() {
       title: "Coursera PLUS",
       rating: 5,
       description: "On Your Account",
-      price: "1 month | $10",
+      price: "1 Year | $55",
     },
     {
       image: "/Img/canva.png",
@@ -155,7 +155,7 @@ export default function ProductList() {
       title: "Google One",
       rating: 5,
       description: "On Your Account | Student",
-      price: "1 Year | 100GB to 2TB from $12",
+      price: "1 Year | 200GB or 2TB",
     },
 
   ];

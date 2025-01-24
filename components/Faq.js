@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import Link from 'next/link';
 
 const Faq = () => {
   const [openIndex, setOpenIndex] = useState(null);
@@ -12,6 +13,13 @@ const Faq = () => {
       linkText: "Here",
       linkUrl: "https://www.facebook.com/ThePremiumSupport/",
       textAfter: " to see reviews on our Facebook page.",
+    },
+    {
+      question: "What are LinkedIn Premium benefits and Types?",
+      textBefore: "click ",
+      linkText: "Here",
+      linkUrl: "https://thepremiumsupport.com/LinkedIn",
+      textAfter: " to see information.",
     },
     {
       question: "How can I get in touch?",

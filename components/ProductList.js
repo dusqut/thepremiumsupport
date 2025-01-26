@@ -157,6 +157,20 @@ export default function ProductList() {
       description: "On Your Account | Student",
       price: "1 Year | 200GB or 2TB",
     },
+    {
+      image: "/Img/youtube.png",
+      title: "Youtube Premium",
+      rating: 5,
+      description: "On Your Email Account",
+      price: "1 Year | $13",
+    },
+    {
+      image: "/Img/amazon.png",
+      title: "Amazon Prime",
+      rating: 5,
+      description: "Get a Private Account",
+      price: "6 months | $10",
+    },
 
   ];
 
